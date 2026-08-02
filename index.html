@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>This is certainly a webpage</title>
     </head>
@@ -13,18 +14,31 @@
             <section>
                 <h2 class="notlist">This header element is nested five levels in</h2>
                 <p class="notlist">This is where I'd say something else about how many levels deep these elements are, if the header didn't already say it.</p>
-                <li id="list">
-                    <ul>This</ul>
-                    <ul>list</ul>
-                    <ul>is</ul>
-                    <ul>nested</ul>
-                    <ul>the</ul>
-                    <ul>furthest</ul>
-                    <ul>of</ul>
-                    <ul>the</ul>
-                    <ul>whole</ul>
-                    <ul>page</ul>
-                </li>
+                <div id="container">
+                    <ul class="list">
+                        <li>This</li>
+                        <li>list</li>
+                        <li>is</li>
+                        <li>nested</li>
+                        <li>the</li>
+                        <li>furthest</li>
+                        <li>of</li>
+                        <li>the</li>
+                        <li>whole</li>
+                        <li>page</li>
+                    </ul>
+                    <ul class="list">
+                        <li>This</li>
+                        <li>is</li>
+                        <li>a new</li>
+                        <li>list</li>
+                        <li>and</li>
+                        <li>now</li>
+                        <li>it's</li>
+                        <li>nested</li>
+                        <li>deeper</li>
+                    </ul>
+                </div>    
                 <img src="./images/bear.jpg" alt="mfw I used the list like that">
             </section>
         </main>
