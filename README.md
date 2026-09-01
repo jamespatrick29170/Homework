@@ -1,6 +1,6 @@
 1) missing doc language
 element: html tag
-screan readers use the `lang` attribute to make sure they're reading content with proper pronunciation. 
+screen readers use the `lang` attribute to make sure they're reading content with proper pronunciation. 
 
 2) low contrast text
 element: .notlist
