@@ -1,18 +1,17 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: blanchedalmond;
-    align-items: center;
+    background-color: red;
+    color: black;
     text-align: center;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-h1 {
+header {
     background-color: burlywood;
-    color: black;
-    margin: auto;
-    padding: 5%;
-    border: 6px solid darkgoldenrod;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 
 img {
@@ -20,39 +19,25 @@ img {
     max-width: 100%;
     height: auto;
     margin: 20px auto;
-
 }
 
-div {
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
+    background-color: burlywood;
+    border: 4px solid gold;
     padding: 20px;
+    text-align: left;
 }
 
-li{
-    list-style-type: none;
-    text-align: center;
+#intro img {
+    flex: 1 1 280px;
+    max-width: 350px;
+    margin: 0;
 }
 
-.notlist {
-    color: saddlebrown;
-    margin: 4px;
-    padding: 20px;
-    border: 2px solid aliceblue;
-}
-
-.list {
-    color: saddlebrown;
-    margin: 4px;
-    padding: 14px;
-    border: 4px solid aliceblue;
-}
-
-#container {
-    border: 3px solid goldenrod;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-}
 @media (min-width: 768px) {
         #container {display: grid; grid-template-columns: 1fr 1fr;}
 }
