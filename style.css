@@ -20,6 +20,12 @@ img {
     margin: 20px auto;
 }
 
+#recipe {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 #intro {
     display: flex;
     flex-direction: column;
@@ -81,5 +87,13 @@ h2 {
     }
     #intro p {
         flex: 2 1 320px;
+    }
+    #recipe{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .ingredientscolumn,
+    .stepscolumn {
+        flex: 1;
     }
 }
