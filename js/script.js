@@ -4,6 +4,7 @@ const notesList = document.getElementById('notesList')
 
 addNote.addEventListener('click', function() {
     const noteText = noteInput.value;
+    console.log('Adding note:', noteText)
     
     // create li element for new notes and store text
     const newNote = document.createElement('li');
@@ -14,6 +15,7 @@ addNote.addEventListener('click', function() {
     removeButton.textContent = 'Remove';
     
     removeButton.addEventListener('click', function() {
+        console.log('Removing note:', newNote.textContent)
         notesList.removeChild(newNote);
     })
 
@@ -24,4 +26,13 @@ addNote.addEventListener('click', function() {
     notesList.appendChild(newNote);
     
     noteInput.value = '';
+    noteInput.classList.remove('has-text')
+})
+
+noteInput.addEventListener('input', function() {
+    if (noteInput.value === '') {
+        noteInput.classList.remove('has-text');
+    } else {
+        noteInput.classList.add('has-text')
+    }
 })

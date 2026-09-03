@@ -60,6 +60,16 @@ h2 {
     list-style-position: inside;
 }
 
+#noteInput {
+    border: 2px solid black;
+    background-color: lightcoral;
+}
+
+#noteInput.has-text {
+    border: 2px solid darkred;
+    background-color: white;
+}
+
 @media (min-width: 768px) {
     #intro {
         flex-direction: row;
