@@ -13,6 +13,7 @@ addNote.addEventListener('click', function() {
     // create remove button for note
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
+    removeButton.setAttribute('aria-label', 'Remove note:' + noteText)
     
     removeButton.addEventListener('click', function() {
         console.log('Removing note:', newNote.textContent)
