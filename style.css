@@ -80,6 +80,26 @@ h2 {
     background-color: white;
 }
 
+#themeToggle {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 8px 16px;
+}
+
+body.alt-theme {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+body.alt-theme header,
+body.alt-theme #intro,
+body.alt-theme h2,
+body.alt-theme .list {
+    background-color: #bc002d;
+    color: #FFFFFF;
+}
+
 @media (min-width: 768px) {
     #intro {
         flex-direction: row;
