@@ -14,7 +14,8 @@ const ratingInput = document.getElementById('ratingInput');
 const ratingError = document.getElementById('ratingError');
 const commentsInput = document.getElementById('commentsInput');
 const commentsError = document.getElementById('commentsError');
-
+//fetch varis
+const dishResult = document.getElementById('dishResult');
 
 addNote.addEventListener('click', function() {
     const noteText = noteInput.value;
@@ -100,3 +101,18 @@ feedbackForm.addEventListener('submit', function(event) {
 emailInput.addEventListener('input', function() {
     emailError.textContent = '';
 })
+fetch('https://www.themealdb.com/api/json/v1/1/random.php')
+    .then(function(response) {
+        if (!response.ok) {
+            throw new Error('Request failed with status ' + response.status);
+        }
+        return response.json();
+    })
+    .then(function(data) {
+        const meal = data.meals[0];
+        dishResult.textContent = meal.strMeal + ' - a ' + meal.strCategory + ' dish from ' + meal.strArea;
+    })
+    .catch(function(error) {
+        console.log('Dish fetch failed:', error);
+        dishResult.textContent = 'Could not load a dish. Please try refreshing the page.';
+    })
